@@ -183,13 +183,20 @@
             html {
                 overflow-x: hidden;
             }
-            
-            @font-face {
-                font-family: 'Victor';
-                src: url('../fonts/Victor.woff2') format('woff2'), url('../fonts/Victor.woff') format('woff');
+            /* @font-face {
+                font-family: 'victor';
+                src: url('../fonts/Victor.eot');
+                src: url('../fonts/Victor.eot?#iefix') format('embedded-opentype'), url('../fonts/Victor.woff2') format('woff2'), url('../fonts/Victor.woff') format('woff'), url('../fonts/Victor.ttf') format('truetype'), url('../fonts/Victor.svg#Victor') format('svg');
                 font-weight: 900;
                 font-style: normal;
                 font-display: swap;
+            } */
+            
+            @font-face {
+                font-family: 'Victor Regular';
+                font-style: normal;
+                font-weight: normal;
+                src: local('Victor Regular'), url('../fonts/Victor.woff') format('woff');
             }
             
             h1,
@@ -331,8 +338,8 @@
             
             .shape-right {
                 position: absolute;
-                right: -6%;
-                top: -8%;
+                right: -88px;
+                top: -50px;
                 z-index: 0;
             }
             
@@ -484,7 +491,7 @@
             }
             
             .caption h1 {
-                font-family: 'victor';
+                font-family: 'victor regular';
                 font-size: 90px;
                 color: #e6d61a;
                 margin: 0px 0 0px;
@@ -646,7 +653,7 @@
             .navigation-bottom ul li a {
                 color: #1d1d1d;
                 text-decoration: none;
-                font-family: 'victor';
+                font-family: 'victor regular';
                 background-color: white;
                 padding: 24px 30px;
                 width: 100%;
@@ -764,6 +771,7 @@
                 position: fixed;
                 top: 0;
                 left: 100%;
+                padding-top: 108px;
                 opacity: 0;
                 background-image: url(../img/bg-pattern.png);
                 background-position: center center;
@@ -812,7 +820,7 @@
                 display: table-caption;
                 text-decoration: none;
                 text-align: left;
-                font-family: 'victor';
+                font-family: 'victor regular';
                 position: relative;
                 transition: 0.3s;
                 /* opacity: 0;
@@ -1012,7 +1020,7 @@
                 }
                 .logo {
                     top: 12px;
-                    left: 11px;
+                    left: 80px;
                 }
                 .navigation-bottom ul li a {
                     font-size: 23px;
@@ -1034,7 +1042,7 @@
                     font-size: 14px;
                 }
                 .shape-left {
-                    display: none;
+                    display: block;
                 }
                 .menu ul li a {
                     font-size: 30px;
@@ -1069,7 +1077,7 @@
                     content: "";
                     width: 100%;
                     height: 100%;
-                    background-color: black;
+                    background-color: #0c0c0c;
                     top: 0;
                     left: 0;
                     z-index: 3;
@@ -1141,7 +1149,7 @@
                     margin: unset;
                     width: 100%;
                     order: 1;
-                    background-color: #1b1b1b;
+                    background-color: black;
                 }
                 header .left-sec>ul {
                     justify-content: center;
@@ -1219,7 +1227,7 @@
                     content: "";
                     width: 100%;
                     height: 100%;
-                    background-color: black;
+                    background-color: #0c0c0c;
                     top: 0;
                     left: 0;
                     z-index: 3;
@@ -1254,15 +1262,14 @@
                     width: 80%;
                 }
                 .caption h1 {
-                    font-size: 20px;
-                    font-family: 'Roboto', sans-serif;
-                    font-weight: bolder;
+                    font-size: 40px;
+                    /* font-family: 'Roboto', sans-serif; */
                 }
                 .counter span {
-                    font-size: 16px;
+                    font-size: 22px;
                 }
                 .counter {
-                    font-size: 12px;
+                    font-size: 14px;
                 }
                 .caption .detail h3 {
                     font-size: 16px;
@@ -1296,7 +1303,7 @@
                     margin: unset;
                     width: 100%;
                     order: 1;
-                    background-color: #1b1b1b;
+                    background-color: #000000;
                 }
                 header .left-sec>ul {
                     justify-content: center;
@@ -1310,11 +1317,9 @@
                     left: 11px;
                 }
                 .navigation-bottom ul li a {
-                    font-size: 8px;
+                    font-size: 15px;
                     padding: 9px 0px;
                     text-align: center;
-                    margin-bottom: auto;
-                    font-family: 'Roboto', sans-serif;
                 }
                 .logo img {
                     width: 85px;
@@ -1330,6 +1335,7 @@
                 }
                 header .left-sec ul li a {
                     font-size: 14px;
+                    text-decoration: none;
                 }
                 .shape-left {
                     display: block;
@@ -1350,27 +1356,26 @@
                     transform: none;
                 }
                 .menu ul li a {
-                    font-size: 20px;
-                    font-family: 'Roboto', sans-serif;
+                    font-size: 25px;
                     font-weight: bold;
                 }
                 .menu ul li:nth-child(1) a img {
                     width: 33px;
-                    left: -27px;
+                    left: -29px;
                 }
                 .menu ul li:nth-child(2) a img {
                     width: 48px;
-                    left: 21px;
-                    top: -62px;
+                    left: 15px;
+                    top: -61px;
                 }
                 .menu ul li:nth-child(3) a img {
                     width: 42px;
-                    top: 38px;
+                    top: 45px;
                 }
                 .menu ul li:nth-child(4) a img {
                     width: 42px;
-                    top: 14px;
-                    right: -2px;
+                    top: 16px;
+                    right: -4px;
                 }
                 .menu ul {
                     width: 80%;
@@ -1431,6 +1436,9 @@
                 }
                 section.hero .shape-left>img:nth-child(2) {
                     width: 303px;
+                }
+                .navigation-bottom ul li a {
+                    font-size: 12px;
                 }
             }
             
