@@ -1254,7 +1254,9 @@
                     width: 80%;
                 }
                 .caption h1 {
-                    font-size: 33px;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bolder;
                 }
                 .counter span {
                     font-size: 16px;
@@ -1308,9 +1310,11 @@
                     left: 11px;
                 }
                 .navigation-bottom ul li a {
-                    font-size: 13px;
+                    font-size: 8px;
                     padding: 9px 0px;
                     text-align: center;
+                    margin-bottom: auto;
+                    font-family: 'Roboto', sans-serif;
                 }
                 .logo img {
                     width: 85px;
@@ -1346,7 +1350,9 @@
                     transform: none;
                 }
                 .menu ul li a {
-                    font-size: 30px;
+                    font-size: 20px;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
                 }
                 .menu ul li:nth-child(1) a img {
                     width: 33px;
@@ -1359,16 +1365,16 @@
                 }
                 .menu ul li:nth-child(3) a img {
                     width: 42px;
-                    top: 55px;
+                    top: 38px;
                 }
                 .menu ul li:nth-child(4) a img {
                     width: 42px;
-                    top: 21px;
+                    top: 14px;
                     right: -2px;
                 }
                 .menu ul {
-                    width: 70%;
-                    margin-top: 85px;
+                    width: 80%;
+                    margin-top: -40px;
                 }
                 .menu ul li {
                     padding-left: 40px;
